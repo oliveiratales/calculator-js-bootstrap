@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="imagem/png" href="icon.png" />
+		<title>Calculator</title>
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+	</head>
+
+  <!-- Calculator -->
+  <body class="backgroundbody">
+
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+        <h1 class="display-4 text-uppercase font-weight-bold title">Calculator</h1>
+      </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col d-flex justify-content-center">
+          <br />
+
+          <div class="calculator">
+            <input id="result" type="text" class="form-control result" placeholder="0" disabled="disabled" />
+            
+            <div class="row">
+              <button onclick="calculate('action', 'c')" type="button" class="btn btn-lg clear font-weight-light">C</button>
+              <button onclick="calculate('action', '/')" type="button" class="btn btn-lg font-weight-light">/</button>
+              <button onclick="calculate('action', '*')" type="button" class="btn btn-lg font-weight-light">x</button>
+            </div>
+
+            <div class="row">
+              <button onclick="calculate('value', 7)" type="button" class="btn btn-lg font-weight-light">7</button>
+              <button onclick="calculate('value', 8)" type="button" class="btn btn-lg font-weight-light">8</button>
+              <button onclick="calculate('value', 9)" type="button" class="btn btn-lg font-weight-light">9</button>
+              <button onclick="calculate('action', '-')" type="button" class="btn btn-lg font-weight-light">-</button>
+            </div>
+            
+            <div class="row">
+              <button onclick="calculate('value', 4)" type="button" class="btn btn-lg font-weight-light">4</button>
+              <button onclick="calculate('value', 5)" type="button" class="btn btn-lg font-weight-light">5</button>
+              <button onclick="calculate('value', 6)" type="button" class="btn btn-lg font-weight-light">6</button>
+              <button onclick="calculate('action', '+')" type="button" class="btn btn-lg font-weight-light">+</button>
+            </div>
+
+            <div class="row">
+              <button onclick="calculate('value', 1)" type="button" class="btn btn-lg font-weight-light">1</button>
+              <button onclick="calculate('value', 2)" type="button" class="btn btn-lg font-weight-light">2</button>
+              <button onclick="calculate('value', 34)" type="button" class="btn btn-lg font-weight-light">3</button>
+              <button onclick="calculate('action', '=')" type="button" class="btn btn-lg enter">=</button>
+            </div>
+
+            <div class="row" style="margin-top: -60px">
+              <button onclick="calculate('value', 0)" type="button" class="btn zero btn-lg font-weight-light">0</button>
+              <button onclick="calculate('action', '.')" type="button" class="btn btn-lg font-weight-light">.</button>
+            </div>
+
+            <!-- Script JS -->
+            <script src="script.js"></script>
+
+          </div>
+        </div>
+      </div>
+    </div>    
+  </body>	
+
+</html>
